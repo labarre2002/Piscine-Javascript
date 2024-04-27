@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="content">
+        <h1>Chez Med</h1>
+               <section>
+                    <h2>Nos PLats:</h2>
+                         <ul>
+                            <li>Poulet Basquaise</li>
+                            <li>Spaghetti Carbonara</li>
+                            <li>Spaghetti Alassassina</li>
+                         </ul>
+
+                </section>
+
+<section>
+ <h2>Nos Salades</h2>
+          <ul>
+              <li>Salade Nicoise</li>
+              <li>Salade Grecque</li>
+              <li>Salade ceasar</li>
+         </ul>
+</section>
+                 <section>
+                      <h2>Nos Désserts</h2>
+                         <ul>
+                            <li>Pomme Duchesse</li>
+                            <li>Pomme Dauphine</li>
+                            <li>Pomme Paillasson</li>
+                         </ul>
+                 </section>
+
+
+</main>
+<script>
+
+const couleur=document.querySelectorAll("li");
+      console.log(couleur);
+
+      couleur.forEach(element => {
+        element.addEventListener("mouseover",()=>{
+            element.classList.toggle('ch');
+            console.log('pat66');
+        })
+
+        element.addEventListener("mouseout",()=>{
+            element.classList.toggle('ch');
+            console.log('pat66');
+        })
+      });
+
+
+      
+
+
+        
+      
+
+
+    
+</script>
+</body>
+</html>

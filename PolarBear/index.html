@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Polar Bear</title>
+</head>
+<body>
+
+   
+    <div class="first">
+        
+        <div class="item">
+            <div class="barre">
+                <label for="dragon">dragon pissing</label>
+                <progress id="dragon" value="17" max="100"> </progress>
+               </div>
+    
+               <div class="barre">
+                <label for="hunger">hunger</label>
+                <progress id="hunger" value="65" max="100"> </progress>
+               </div>
+    
+               <div class="barre">
+                <label for="energy">energy</label>
+                <progress id="energy" value="15" max="100"> </progress>
+               </div>
+    
+        </div>
+    
+        <div class="item">
+            <div class="barre">
+                <label for="coding">coding power</label>
+                <progress id="coding" value="65" max="100"> </progress>
+               </div>
+    
+               <div class="barre">
+                <label for="virtue">virtue</label>
+                <progress id="virtue" value="100" max="100"> </progress>
+               </div>
+    
+               <div class="barre">
+                <label for="hygiene">hygiene</label>
+                <progress id="hygiene" value="90" max="100"> </progress>
+               </div>
+    
+        </div>
+    
+     </div>
+       
+     
+
+ 
+   
+<script>
+     const coding=document.getElementsByTagName('progress')[0].value;
+   document.getElementsByTagName('progress')[0].value=document.getElementsByTagName('progress')[0].value + 1;
+   
+   console.log(coding);
+</script>
+
+</body>
+</html>

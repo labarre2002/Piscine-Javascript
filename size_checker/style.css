@@ -1,0 +1,33 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-size: 16px;
+    font-family: verdana;
+}
+
+body{
+    height: 1200px;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+h1{
+    font-size: 2em;
+    display: block;
+    margin-bottom: 1.5em;
+}
+time{
+    margin-bottom: 1em;
+}
+
+ul li{
+    list-style: none;
+    line-height: 1.5;
+}

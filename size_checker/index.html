@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Size Checker</title>
+</head>
+<body class="content">
+    
+                <header>
+                    <h1>Size checker</h1>
+                </header>
+                <time class="time" datetime="4:57:35 pm"></time>
+
+
+        <ul>
+           <li>Screen: <span class="largeurE"></span> x <span class="hauteurE"></span></li>
+           <li>Window outer:  <span class="largeurEx"></span> x <span class="hauteurEx"></span> </li>
+           <li>Window inner:  <span class="largeurInt"></span> x <span class="hauteurInt"></span> </li>
+           <li>Document: <span class="largeurD"></span> x <span class="hauteurD"></span>  </li>
+
+
+        </ul>
+
+
+
+
+<script>
+    const temps=document.querySelector('.time');
+    let actuel=new Date().toLocaleString();
+    temps.innerHTML=actuel;
+
+
+    
+
+    const largeurecran=document.querySelector('.largeurE');
+    const hauteurecran=document.querySelector('.hauteurE');
+    const largeurout=document.querySelector('.largeurEx');
+    const hauteurout=document.querySelector('.hauteurEx');
+    const largeurIn=document.querySelector('.largeurInt');
+    const hauteurIn=document.querySelector('.hauteurInt');
+    const largeurDoc=document.querySelector('.largeurD');
+    const hauteurDoc=document.querySelector('.hauteurD');
+
+     let largeurE=screen.width;
+     let hauteurE=screen.height;
+     let largeurEx=window.outerWidth;
+     let hauteurEx=window.outerHeight;
+     let largeurInt=window.innerWidth;
+     let hauteurInt=window.innerHeight;
+     let largeurD=document.body.clientWidth;
+     let hauteurD=document.body.clientHeight;
+
+    setInterval(()=>{
+         const temps=document.querySelector('.time');
+         let actuel=new Date().toLocaleString();
+         temps.innerHTML=actuel;
+         resize();
+    },1000)
+
+
+    function resize(){
+        largeurecran.innerHTML=largeurE;
+        hauteurecran.innerHTML=hauteurE;
+        largeurout.innerHTML=largeurEx;
+        hauteurout.innerHTML=hauteurEx;
+        largeurIn.innerHTML=largeurInt;
+        hauteurIn.innerHTML=hauteurInt;
+        largeurDoc.innerHTML=largeurD;
+        hauteurDoc.innerHTML=hauteurD;
+    
+    }
+
+window.onresize=resize;
+    console.log(largeurecran)
+</script>
+
+</body>
+</html>
